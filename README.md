@@ -2,6 +2,7 @@
 Data on employers and vacancies obtained from hh.ru , and placed in postgresql tables
 
 Проект по БД
+
 В рамках проекта получить данные о компаниях и вакансиях с сайта hh.ru, спроектировать таблицы в БД PostgreSQL и загрузить полученные данные в созданные таблицы.
 Основные шаги проекта
 Получить данные о работодателях и их вакансиях с сайта hh.ru. Для этого используйте публичный API hh.ru и библиотеку requests.
@@ -9,6 +10,7 @@ Data on employers and vacancies obtained from hh.ru , and placed in postgresql t
 Спроектировать таблицы в БД PostgreSQL для хранения полученных данных о работодателях и их вакансиях. Для работы с БД используйте библиотеку psycopg2.
 Реализовать код, который заполняет созданные в БД PostgreSQL таблицы данными о работодателях и их вакансиях.
 Создать класс DBManager для работы с данными в БД.
+
 Класс DBManager
 Создайте класс DBManager, который будет подключаться к БД PostgreSQL и иметь следующие методы:
 get_companies_and_vacancies_count()
