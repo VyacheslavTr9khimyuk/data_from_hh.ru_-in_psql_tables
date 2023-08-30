@@ -29,11 +29,11 @@ def get_page(text, pg=0):
     return data
 
 
-# Текст поискового запроса
-text_filter = "Python Developer"
+# Текст поискового запроса main()
+# text_filter = "Python Developer"
 
 # Функция для cчитывания 1000 вакансий (10 страниц по 100 вакансий)
-def get_hh_ru_data():
+def get_hh_ru_data(text_filter):
     for page in range(0, 10):
         # Преобразование текстового ответа запроса в словарь
         page_dict = json.loads(get_page(text_filter, page))
