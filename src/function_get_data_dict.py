@@ -34,6 +34,9 @@ def get_data_for_database() -> list[dict[str, Any]]:
         data_dict = [{
             'vacancy_id' : json_dict['id'],
             'vacancy_name' : json_dict['name'],
+            'vacancy_url' : json_dict['alternate_url'],
+            'area_id' : json_dict['area']['id'],
+            'area_name' : json_dict['area']['name'],
             'experience' : json_dict['experience']['name'],
             'description' : json_dict['description'],
             'salary_from' : s_from,
