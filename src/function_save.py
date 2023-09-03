@@ -11,12 +11,13 @@ def save_data_to_database(data: list[dict[str, Any]], database_name: str, params
         for dt in data:
             cur.execute(
                 """
-                INSERT INTO vacancies (vacancy_id, vacancy_name, experience, description, 
-                salary_from, salary_to, salary_currency, company_id)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+                INSERT INTO vacancies (vacancy_id, vacancy_name, vacancy_url, area_id, area_name, 
+                experience, description,salary_from, salary_to, salary_currency, company_id)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 """,
-                (dt['vacancy_id'], dt['vacancy_name'], dt['experience'], dt['description'],
-                 dt['salary_from'], dt['salary_to'], dt['salary_currency'], dt['company_id'])
+                (dt['vacancy_id'], dt['vacancy_name'], dt['vacancy_url'], dt['area_id'], dt['area_name'],
+                 dt['experience'], dt['description'], dt['salary_from'], dt['salary_to'], dt['salary_currency'],
+                 dt['company_id'])
             )
             cur.execute(
                 """
