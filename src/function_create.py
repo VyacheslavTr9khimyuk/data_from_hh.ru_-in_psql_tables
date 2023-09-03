@@ -19,11 +19,14 @@ def create_database(database_name: str, params: dict):
             CREATE TABLE vacancies (
                 vacancy_id INTEGER PRIMARY KEY,
                 vacancy_name VARCHAR(255),
+                vacancy_url VARCHAR(255),
+                area_id INTEGER,
+                area_name VARCHAR(50),
                 experience TEXT,
                 description TEXT,
                 salary_from INTEGER,
                 salary_to INTEGER,
-                salary_currency VARCHAR(50)
+                salary_currency VARCHAR(50),
                 company_id INTEGER
                 CONSTRAINT fk_vacancies_companies
                 FOREIGN KEY (company_id) REFERENCES companies (company_id) ON DELETE CASCADE
