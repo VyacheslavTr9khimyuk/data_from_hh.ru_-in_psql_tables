@@ -31,7 +31,7 @@ def get_data_for_database() -> list[dict[str, Any]]:
             s_currency = None
 
         # Добавление в список множества с данными по вакансии
-        data_dict = [{
+        data_dict.append({
             'vacancy_id' : json_dict['id'],
             'vacancy_name' : json_dict['name'],
             'vacancy_url' : json_dict['alternate_url'],
@@ -44,7 +44,7 @@ def get_data_for_database() -> list[dict[str, Any]]:
             'salary_currency' : s_currency,
             'company_id' : json_dict['employer']['id'],
             'company_name' : json_dict['employer']['name']
-        }]
+        })
 
     print('Файлы обработаны')
 
