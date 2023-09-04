@@ -30,7 +30,7 @@ def get_page(text, pg=0):
 
 
 # Текст поискового запроса main()
-# text_filter = "Python Developer"
+# text_filter = "Developer"
 
 # Функция для cчитывания 1000 вакансий (10 страниц по 100 вакансий)
 def get_hh_ru_data(text_filter):
