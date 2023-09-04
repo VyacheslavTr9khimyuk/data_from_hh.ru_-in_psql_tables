@@ -29,7 +29,7 @@ class DBManager:
 
     def get_union_table(self):
         '''
-        В sqrl объединяет таблицы vacancies и companies. В таблице вакансий пересчитывает
+        Возвращает строку с кодом sql, который объединяет таблицы vacancies и companies. В таблице вакансий пересчитывает
         зарплату на рубли и находит среднее, если указана вилка
         '''
         sqrl_union = '''CREATE OR REPLACE VIEW vacancy_company_data AS
