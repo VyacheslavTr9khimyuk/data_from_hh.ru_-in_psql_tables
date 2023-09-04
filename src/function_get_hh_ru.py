@@ -1,5 +1,6 @@
 import requests                 # Для работы с http-запросами
 import fake_useragent           # Для создания заголовков
+import random
 import os                       # Для работы с ОС (для создания файлов)
 import json                     # Для работы с форматом json
 import time                     # Для задержки между запросами
