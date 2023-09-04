@@ -44,4 +44,5 @@ def create_database(database_name: str, params: dict):
     conn.commit()
     conn.close()
 
-    print('БД и таблицы создано')
+    print(f"БД {database_name} успешно создана")
+
