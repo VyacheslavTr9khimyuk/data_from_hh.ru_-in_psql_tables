@@ -25,6 +25,6 @@ DBManager.py с классом DBManager.
 
 ИНСТРУКЦИЯ
 
-1. Создать файл Database.ini с указанием параметров PostgreSQL (host, user, password, port)
+1. Создать в проекте файл Database.ini с указанием параметров PostgreSQL (host, user, password, port)
 2. Запустить на исполнение файл main()
 
